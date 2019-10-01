@@ -25,14 +25,14 @@ dAkf9eR93rOocohP
 #### Request
 ```
 curl -X POST \
-  https://<Domain>/oauth/token \
+  https://igtb-sdu.auth0.com/oauth/token \
   -H 'Cache-Control: no-cache' \
   -H 'Content-Type: application/x-www-form-urlencoded' \
-  -H 'Postman-Token: 6acea452-3b8e-4a36-b82d-33bf2b44e57c' \
+  -H 'Postman-Token: e3a80b8c-6d9c-4557-8c7d-fb35a64b969b' \
   -d 'grant_type=authorization_code&
-   client_id=ggggg&   
-   redirect_uri=https%3A%2F%2Foauthdebugger.com%0A&
-   audience=https%3A%2F%2Fsdu-53%2Fapi%2F'
+      client_id=FASDFSDA&
+      code=7tTAZVs81ZtVwuiM&
+      redirect_uri=https%3A%2F%2Foauthdebugger.com%0A      
 ```
 
 
@@ -43,10 +43,9 @@ curl -X POST \
 curl -X POST \
   https://<Domain>/oauth/token \
   -H 'Cache-Control: no-cache' \
-  -H 'Content-Type: application/x-www-form-urlencoded' \
-  -H 'Postman-Token: 6acea452-3b8e-4a36-b82d-33bf2b44e57c' \
+  -H 'Content-Type: application/x-www-form-urlencoded' \  
   -d 'grant_type=client_credential&
-   client_id=ggggg&   
-   redirect_uri=https%3A%2F%2Foauthdebugger.com%0A&
-   audience=https%3A%2F%2Fsdu-53%2Fapi%2F'
+   client_id=ggggg&
+   client_secret=fasdfasdf&
+   redirect_uri=https%3A%2F%2Foauthdebugger.com%0A&   
 ```
