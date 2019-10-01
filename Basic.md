@@ -49,3 +49,16 @@ curl -X POST \
    client_secret=fasdfasdf&
    redirect_uri=https%3A%2F%2Foauthdebugger.com%0A&   
 ```
+
+
+
+#### Refresh TOken Grant type
+
+```
+curl -X POST \
+  https://igtb-sdu.auth0.com/oauth/token \
+  -H 'Cache-Control: no-cache' \
+  -H 'Content-Type: application/x-www-form-urlencoded' \
+  -H 'Postman-Token: 750f9f97-7ede-4aaa-bdf1-6edcf5d53623' \
+  -d 'grant_type=refresh_token&client_id=43dCuXEJuvEzt4tPtU9ClZi1QS-dYdeQ&refresh_token=hDO9Y354OOj1jPnwyAZVXc13dSM3w1DsfVnlw_68ceNfh'
+```  
