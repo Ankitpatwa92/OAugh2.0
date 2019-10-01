@@ -62,3 +62,19 @@ curl -X POST \
   -H 'Postman-Token: 750f9f97-7ede-4aaa-bdf1-6edcf5d53623' \
   -d 'grant_type=refresh_token&client_id=43dCuXEJuvEzt4tPtU9ClZi1QS-dYdeQ&refresh_token=hDO9Y354OOj1jPnwyAZVXc13dSM3w1DsfVnlw_68ceNfh'
 ```  
+
+#### Revoke Refresh Token
+
+Refresh token never expire it is recomendate to revoke refresh token
+
+```
+curl -X POST \
+  https://igtb-sdu.auth0.com/oauth/revoke \
+  -H 'Cache-Control: no-cache' \
+  -H 'Content-Type: application/json' \
+  -H 'Postman-Token: a5b1de1e-9803-4f45-b646-a83478eab15b' \
+  -d '{
+"client_id":"43dCuXEJuvEzt4tPtU9ClZi1QS-dYdeQ",
+"token":"hDO9Y354OOj1jPnwyAZVXc13dSM3w1DsfVnlw_68ceNfh"
+}'
+```
